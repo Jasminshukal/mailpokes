@@ -58,6 +58,6 @@ app.get('/', function (req, res) {
   res.redirect('/');
 });
 
-http.listen(8000, function () {
-  console.log('listening on *:8000');
+http.listen(80, function () {
+  console.log('listening on *:80');
 });
