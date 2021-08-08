@@ -57,8 +57,10 @@ pageRouter(app);
 app.get('/', function (req, res) {
   res.redirect('/');
 });
-const port = process.env.PORT || 3000
 
-http.listen(process.env.PORT || 3000, function(){
-  console.log("Express server listening on port %d in %s mode", this.address().port, http.settings.env);
+
+var server_port = process.env.YOUR_PORT || process.env.PORT || 80;
+var server_host = process.env.YOUR_HOST || '0.0.0.0';
+http.listen(server_port, server_host, function() {
+    console.log('Listening on port %d', server_port);
 });
