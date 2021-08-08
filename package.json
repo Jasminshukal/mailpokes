@@ -3,11 +3,11 @@
   "version": "2.1.0",
   "description": "Admiria Node js",
   "main": "index.js",
-  "start": "node http.js",
+  "start": "node app.js",
   "homepage": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node http.js"
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
